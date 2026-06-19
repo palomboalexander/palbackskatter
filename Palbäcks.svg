@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">S*Palbäcks sibiriska katter</title>
+  <desc id="desc">Vit logotyp med stiliserad katt och texten S*Palbäcks sibiriska katter på transparent bakgrund.</desc>
+
+  <!-- Transparent background by default -->
+
+  <!-- Cat icon -->
+  <g fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head -->
+    <path d="M130 112
+             C130 72 162 42 205 42
+             C248 42 280 72 280 112
+             C280 156 247 188 205 188
+             C163 188 130 156 130 112Z" />
+
+    <!-- Ears -->
+    <path d="M155 67 L160 24 L190 50" />
+    <path d="M255 67 L250 24 L220 50" />
+
+    <!-- Face details -->
+    <path d="M185 112 C190 118 198 121 205 121 C212 121 220 118 225 112" />
+    <path d="M205 121 L205 139" />
+    <path d="M178 96 L178 96" />
+    <path d="M232 96 L232 96" />
+
+    <!-- Whiskers -->
+    <path d="M175 126 L130 116" />
+    <path d="M175 140 L128 146" />
+    <path d="M235 126 L280 116" />
+    <path d="M235 140 L282 146" />
+
+    <!-- Tail / body curve -->
+    <path d="M278 164
+             C330 170 350 118 322 92
+             C300 72 278 92 292 114" />
+  </g>
+
+  <!-- Text -->
+  <g fill="#ffffff">
+    <text x="340" y="112"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="54"
+          font-weight="700"
+          letter-spacing="1">
+      S*Palbäcks
+    </text>
+
+    <text x="343" y="168"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="30"
+          font-weight="400"
+          letter-spacing="4">
+      SIBIRISKA KATTER
+    </text>
+  </g>
+</svg>

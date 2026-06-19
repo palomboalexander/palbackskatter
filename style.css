@@ -1,0 +1,236 @@
+/* ÖVERGRIPANDE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 15px;
+    color: black;
+}
+
+/* FONTER */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: gray;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.ingress {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    max-width: 1000px;
+    display: flex;
+    padding: 1.5rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-right nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+/* UNDERSIDOR */
+
+.undersida {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.undersida img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+
+/* VÅRA KATTER */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+.hero {
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+}
+
+.katter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.kattkort {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    transition: all 0.3s ease;
+}
+
+.kattkort:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.18);
+}
+
+.kattkort-lank {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.kattbild {
+    text-align: left;
+    background: white;
+}
+
+.kattbild img {
+    width: 100%;
+    display: block;
+}
+
+.text-katt {
+    color: black;
+    padding: 10px;
+}
+
+.text-katt h2 {
+    margin-top: 0;
+}
+
+.knapp {
+    display: table;
+    margin: 1rem auto 0 auto;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.kattkort:hover .knapp {
+    background: black;
+    color: white;
+}
+
+/* FOOTER */
+
+footer {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    background-color: black;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column p {
+    margin: 0;
+    color: white;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.footer-column h4 {
+    color: white;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        padding: 1rem;
+    }
+
+    .katter {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+}
